@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title%}paste.title | Pastebin{%endblock%}</title>
+</head>
+<body style="">
+<div style="top:25px;left:50%;"><font color="red" size="6"><a  style="text-decoration:none;" href="/">Pastebin</a></font></div>
+<br>
+<div>
+	<table style="">
+		<tr><td>title</td><td>{{paste.title}}</td></tr>
+		<tr><td>category</td><td>{{paste.category|escape}}</td></tr>
+		<tr><td>code</td><td><textarea cols="100" rows="30">{{paste.code}}</textarea></td></tr>
+	</table>
+</div>
+</body>
+</html>
